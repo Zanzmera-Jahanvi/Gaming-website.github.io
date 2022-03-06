@@ -1,0 +1,23 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h3
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -200px;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}

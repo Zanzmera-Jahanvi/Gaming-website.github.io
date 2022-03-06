@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming website | Game Center</title>
+    <link rel="stylesheet" href="gamecenter.css">
+</head>
+
+<body>
+    <div id="includedContent"></div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h1>1</h1>
+                <p> Memory Game</p>
+                <div class="imgbx">
+                    <img src="img/game1.jpg" alt="">
+                </div>
+                <a id="firstGame" href="" target="_blank">Play</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <h1>2</h1>
+                <p> Candy Crush Game</p>
+                <div class="imgbx">
+                    <img src="img/game2.jpg" alt="">
+                </div>
+                <a id="secondGame" href="" target="_blank">Play</a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#includedContent").load("navbar.html");
+       
+        
+        
+        function game1() {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "/memoryGame/script.js", true);
+            // if (xhr) {
+            //     // alert("all ok");
+            // }
+            xhr.send()
+
+           
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    $("#firstGame").attr("href","/memoryGame/index.html")
+                    $("#secondGame").attr("href","/CandyCrush/index.html")
+
+                }
+            }
+
+
+            
+        }
+        
+        game1()
+        
+        
+       
+    });
+</script>
+
+</html>

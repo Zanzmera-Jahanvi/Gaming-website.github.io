@@ -1,0 +1,39 @@
+body
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.container h1
+{
+    color: #fff;
+    margin-top: 100px;
+}
+button{
+    
+    padding:10px 50px;
+    border-radius:5px;
+    font-size:20px;
+    font-weight:200;
+    background-color: rgb(56, 47, 179);
+    margin-top: 50px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    /* font-size: 1.5em; */
+    letter-spacing:3px;
+}
+
+p{
+    color:#fff;
+
+}

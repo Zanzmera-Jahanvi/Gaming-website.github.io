@@ -1,0 +1,76 @@
+body
+{
+    overflow: hidden;
+}
+body:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background:url(img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    z-index: -1;
+    opacity: 0.8;
+}
+.grid
+{
+    height: 560px;
+    width: 560px;
+    display: flex;
+    margin-top: -50px;
+    flex-wrap: wrap;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    /* background: blueviolet; */
+}
+.hero
+{
+    margin-bottom:20px;
+    display: flex;
+    align-items:center;
+    
+    justify-content: center;
+}
+.grid div
+{
+    height:70px;
+    width: 70px;
+}
+
+.score-board{
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    padding: 0px 10px;
+
+}
+.score-board h3
+{
+    font-size:2rem;
+    letter-spacing:1px;
+}
+.score-board h1
+{
+    font-size:2rem;
+    position: relative;
+    top: 12px;
+    letter-spacing:1px;
+}
+.score-board h2
+{
+    top: -13px;
+    margin-left: -138px;
+    position: relative;
+    padding: 0px 10px;
+}
+
